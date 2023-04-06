@@ -12,9 +12,9 @@ const TodoRow = ({ todo, todoDone, checked, deleteTodo }) => {
         }}
       ></Input>
 
-      <span className="font-medium text-gray-700">{todo}</span>
+      <span className="font-medium text-gray-600">{todo}</span>
       <MdDeleteForever
-        className="text-2xl"
+        className="text-2xl cursor-pointer"
         onClick={() => {
           deleteTodo(todo);
         }}
